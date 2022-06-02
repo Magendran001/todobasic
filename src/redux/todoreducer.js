@@ -1,7 +1,7 @@
 import store from "./store";
 
-
-const todoreducer = (state, { type, payload }) => {
+const init = { todo: [], loading: false };
+const todoreducer = (state = init, { type, payload }) => {
 
 
     switch (type) {

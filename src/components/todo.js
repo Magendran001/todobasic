@@ -1,14 +1,17 @@
 import { useEffect } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
+import Displaytodo from './displaytodo';
 import { Gettodo, Storetodo, GET_TODOS_REQUEST, GET_TODOS_SUCCESS, POST_TODOS_SUCCESS, POST_TODOS_REQUEST } from '../redux/todofunction';
 import { useState } from 'react';
 function Todo() {
   let Dispatch = useDispatch();
-  let selector = useSelector((state) => { return state.todo });
-  let Loading = useSelector((state) => { return state.loading });
-  console.log(Loading)
+  let isAuth = useSelector((state) => { return state.authenticatereducer.isAuth });
+  console.log(isAuth)
 
-  let [data, setdata] = useState([]);
+
+
+
+
   let [input, setinput] = useState();
 
   let [obj, setobj] = useState({})
@@ -84,9 +87,9 @@ function Todo() {
     <div> <input type="text" placeholder='Entertodo' onChange={(e) => { setinput(e.target.value) }} />
       <button onClick={() => { postTodo() }}>Add</button>
     </div>
-    <div>
-      {Loading ? "...loading" : selector.map((e) => { return <div key={e.id}>{`Todo:  ${e.todo}`}</div> })}
-    </div>
+    <div> {isAuth ? <Displaytodo /> : "Kindly login to show todos"}</div>
+
+
   </div>)
 }
 export default Todo

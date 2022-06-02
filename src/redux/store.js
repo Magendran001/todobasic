@@ -1,7 +1,9 @@
-import { createStore } from "redux";
+import { createStore, combineReducers } from "redux";
 import todoreducer from "./todoreducer";
+import authenticatereducer from "./authentication/authenticatereducer";
 
-const init = { todo: [], loading: false };
-const store = createStore(todoreducer, init);
+
+const rootreducer = combineReducers({ todoreducer, authenticatereducer })
+const store = createStore(rootreducer);
 
 export default store
