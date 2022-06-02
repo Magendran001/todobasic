@@ -1,0 +1,73 @@
+{
+  "posts": [
+    {
+      "id": 1,
+      "title": "json-server",
+      "author": "typicode"
+    }
+  ],
+  "comments": [
+    {
+      "id": 1,
+      "body": "some comment",
+      "postId": 1
+    }
+  ],
+  "profile": {
+    "name": "typicode"
+  },
+  "todo": [
+    {
+      "todo": "react",
+      "id": 1
+    },
+    {
+      "todo": "javascript",
+      "id": 2
+    },
+    {
+      "todo": "venkatss",
+      "id": 5
+    },
+    {
+      "todo": "venkatss",
+      "id": 6
+    },
+    {
+      "todo": "maggi",
+      "id": 7
+    },
+    {
+      "todo": "maggu",
+      "id": 8
+    },
+    {
+      "todo": "raja",
+      "id": 9
+    },
+    {
+      "todo": "kishore",
+      "id": 10
+    },
+    {
+      "todo": "ma",
+      "id": 11
+    },
+    {
+      "todo": "l",
+      "id": 12
+    },
+    {
+      "todo": "jjjjjjjjjjjjjjjjjj",
+      "id": 13
+    },
+    {
+      "todo": "jjjjjjjjjjjjjjjjjj",
+      "id": 14
+    },
+    {
+      "todo": "jjjjjjjjjjjjjjjjjj",
+      "id": 15
+    }
+  ]
+}
