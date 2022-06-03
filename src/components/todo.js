@@ -3,6 +3,7 @@ import { useDispatch, useSelector } from 'react-redux';
 import Displaytodo from './displaytodo';
 import { Gettodo, Storetodo, GET_TODOS_REQUEST, GET_TODOS_SUCCESS, POST_TODOS_SUCCESS, POST_TODOS_REQUEST } from '../redux/todofunction';
 import { useState } from 'react';
+import { Link } from 'react-router-dom';
 function Todo() {
   let Dispatch = useDispatch();
   let isAuth = useSelector((state) => { return state.authenticatereducer.isAuth });
@@ -52,7 +53,7 @@ function Todo() {
         headers: {
           "content-type": "application/json",
         },
-        body: JSON.stringify({ todo: input })
+        body: JSON.stringify({ todo: input, status: "undone" })
 
 
       },
@@ -88,6 +89,8 @@ function Todo() {
       <button onClick={() => { postTodo() }}>Add</button>
     </div>
     <div> {isAuth ? <Displaytodo /> : "Kindly login to show todos"}</div>
+
+    <div>{isAuth ? <Link to="/completedtodo">Completed Todo </Link> : ""}</div>
 
 
   </div>)

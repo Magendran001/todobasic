@@ -18,76 +18,14 @@
   },
   "todo": [
     {
-      "todo": "react",
+      "todo": "maggi",
+      "status": "done",
       "id": 1
     },
     {
-      "todo": "javascript",
-      "id": 2
-    },
-    {
-      "todo": "venkatss",
-      "id": 5
-    },
-    {
-      "todo": "venkatss",
-      "id": 6
-    },
-    {
-      "todo": "maggi",
-      "id": 7
-    },
-    {
-      "todo": "maggu",
-      "id": 8
-    },
-    {
-      "todo": "raja",
-      "id": 9
-    },
-    {
       "todo": "kishore",
-      "id": 10
-    },
-    {
-      "todo": "ma",
-      "id": 11
-    },
-    {
-      "todo": "l",
-      "id": 12
-    },
-    {
-      "todo": "jjjjjjjjjjjjjjjjjj",
-      "id": 13
-    },
-    {
-      "todo": "jjjjjjjjjjjjjjjjjj",
-      "id": 14
-    },
-    {
-      "todo": "jjjjjjjjjjjjjjjjjj",
-      "id": 15
-    },
-    {
-      "todo": "VEENKA",
-      "id": 16
-    },
-    {
-      "todo": "d",
-      "id": 17
-    },
-    {
-      "todo": "k",
-      "id": 18
-    },
-    {
-      "todo": "raja",
-      "id": 19
-    },
-    {
-      "todo": "raja",
-      "id": 20
+      "status": "done",
+      "id": 2
     }
   ]
 }

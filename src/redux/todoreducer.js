@@ -1,6 +1,6 @@
-import store from "./store";
 
-const init = { todo: [], loading: false };
+
+const init = { todo: [], loading: false, status: "undone" };
 const todoreducer = (state = init, { type, payload }) => {
 
 
